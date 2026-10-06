@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f4f2ee">
+    <title>Connect with me</title>
+    <style>
+        :root {
+            color-scheme: light;
+            font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            color: #20211f;
+            background: #f4f2ee;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            min-height: 100svh;
+            margin: 0;
+            display: grid;
+            place-items: center;
+            padding: 24px 16px;
+            background:
+                radial-gradient(ellipse at 15% 10%, rgba(227, 218, 199, 0.65), transparent 40%),
+                #f4f2ee;
+        }
+
+        .phone-card {
+            width: min(100%, 390px);
+            padding: 36px 24px 24px;
+            border: 1px solid rgba(32, 33, 31, 0.07);
+            border-radius: 30px;
+            background: rgba(255, 255, 255, 0.88);
+            box-shadow: 0 24px 70px rgba(41, 37, 29, 0.12);
+            text-align: center;
+        }
+
+        .avatar {
+            width: 82px;
+            height: 82px;
+            margin: 0 auto 20px;
+            display: grid;
+            place-items: center;
+            border-radius: 50%;
+            background: #e8e2d6;
+            color: #625943;
+        }
+
+        .avatar svg {
+            width: 38px;
+            height: 38px;
+        }
+
+        .eyebrow {
+            margin: 0 0 9px;
+            color: #858176;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: clamp(27px, 8vw, 34px);
+            letter-spacing: -0.045em;
+        }
+
+        .intro {
+            margin: 10px 0 28px;
+            color: #77766f;
+            font-size: 15px;
+            line-height: 1.55;
+        }
+
+        .links {
+            display: grid;
+            gap: 12px;
+        }
+
+        .link-button {
+            min-height: 58px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 0 17px;
+            border: 1px solid #e9e7e1;
+            border-radius: 16px;
+            background: #fff;
+            color: inherit;
+            font-size: 15px;
+            font-weight: 650;
+            text-align: left;
+            text-decoration: none;
+            transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .link-button:hover {
+            transform: translateY(-2px);
+            border-color: #d7d2c6;
+            box-shadow: 0 8px 20px rgba(41, 37, 29, 0.08);
+        }
+
+        .link-button:focus-visible {
+            outline: 3px solid #81765d;
+            outline-offset: 3px;
+        }
+
+        .icon {
+            width: 36px;
+            height: 36px;
+            flex: 0 0 36px;
+            display: grid;
+            place-items: center;
+            border-radius: 11px;
+        }
+
+        .icon svg {
+            width: 19px;
+            height: 19px;
+        }
+
+        .facebook .icon {
+            background: #eaf1ff;
+            color: #1877f2;
+        }
+
+        .instagram .icon {
+            background: #fff0f3;
+            color: #d94680;
+        }
+
+        .phone .icon {
+            background: #eaf5ed;
+            color: #33834a;
+        }
+
+        .arrow {
+            width: 17px;
+            height: 17px;
+            margin-left: auto;
+            color: #aaa79e;
+        }
+
+        footer {
+            margin-top: 24px;
+            color: #a09d94;
+            font-size: 11px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                scroll-behavior: auto !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="phone-card">
+        <div class="avatar" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="8" r="3.5"></circle>
+                <path d="M5.5 20c.5-4 2.7-6 6.5-6s6 2 6.5 6"></path>
+            </svg>
+        </div>
+        <p class="eyebrow">Let’s connect</p>
+        <h1>Your Name</h1>
+        <p class="intro">Find me on social media or get in touch.</p>
+
+        <nav class="links" aria-label="Contact links">
+            <a class="link-button facebook" href="https://www.facebook.com/your-profile" target="_blank" rel="noopener noreferrer">
+                <span class="icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-8.2h2.8l.4-3.2h-3.2V7.5c0-.9.3-1.5 1.6-1.5h1.7V3.1c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.3H7.3v3.2h2.8V21h3.4Z"></path></svg>
+                </span>
+                <span>Facebook</span>
+                <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"></path></svg>
+            </a>
+
+            <a class="link-button instagram" href="https://www.instagram.com/your-profile/" target="_blank" rel="noopener noreferrer">
+                <span class="icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="3.5" width="17" height="17" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.7" cy="6.7" r="1" fill="currentColor" stroke="none"></circle></svg>
+                </span>
+                <span>Instagram</span>
+                <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"></path></svg>
+            </a>
+
+            <a class="link-button phone" href="tel:+1234567890">
+                <span class="icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3.5h10a1.5 1.5 0 0 1 1.5 1.5v14a1.5 1.5 0 0 1-1.5 1.5H7A1.5 1.5 0 0 1 5.5 19V5A1.5 1.5 0 0 1 7 3.5Z"></path><path d="M10 17.5h4"></path></svg>
+                </span>
+                <span>Call me</span>
+                <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M7 12h10m-4-4 4 4-4 4"></path></svg>
+            </a>
+        </nav>
+
+        <footer>Tap a button to connect</footer>
+    </main>
+</body>
+</html>
